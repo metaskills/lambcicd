@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+IMAGE_NAME=lambcicd-build-ruby2.5-nodejs10.x
+
+docker run -it -v "${PWD}:/var/task" --rm $IMAGE_NAME bash
